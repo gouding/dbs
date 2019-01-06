@@ -17,5 +17,6 @@
   "scripts": {
     "deploy": "gh-pages -d client/",
     "start": "webpack-dev-server --mode development"
-  }
+  },
+  "repository": "git@github.com:gouding/dbs.git"
 }
