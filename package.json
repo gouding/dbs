@@ -1,13 +1,21 @@
 {
   "devDependencies": {
     "gh-pages": "^2.0.1",
-    "mongoose": "^5.4.2"
+    "html-webpack-plugin": "^3.2.0",
+    "koa": "^2.6.2",
+    "koa-router": "^7.4.0",
+    "koa2-cors": "^2.0.6",
+    "mongoose": "^5.4.2",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.2.0",
+    "webpack-dev-server": "^3.1.14"
   },
   "name": "mongodb",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "client/index.js",
   "license": "MIT",
   "scripts": {
-    "deploy": "gh-pages -d client/"
+    "deploy": "gh-pages -d client/",
+    "start": "webpack-dev-server --mode development"
   }
 }
