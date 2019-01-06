@@ -12,11 +12,11 @@
   },
   "name": "mongodb",
   "version": "1.0.0",
-  "main": "client/index.js",
+  "main": "dist/index.html",
   "license": "MIT",
   "scripts": {
-    "deploy": "gh-pages -d client/",
-    "start": "webpack-dev-server --mode development"
-  },
-  "repository": "git@github.com:gouding/dbs.git"
+    "deploy": "gh-pages -d dist/",
+    "start": "webpack-dev-server --mode development",
+    "build": "webpack --mode production"
+  }
 }
