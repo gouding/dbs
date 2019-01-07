@@ -28,7 +28,7 @@ router.get('/user', async (ctx, next) => {
     } else {
       let ret
       res.forEach(item => {
-        ret = `name:${item.name},今年我${item.age}岁，我的座右铭是:${item.content}啦啦啦`
+        ret += `name:${item.name},今年我${item.age}岁，我的座右铭是:${item.content}啦啦啦`
       })
       // ctx.type='html'
       ctx.body = ret;
